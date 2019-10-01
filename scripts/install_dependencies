@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install default-jdk
+sudo apt-get -y install default-jdk
 sudo groupadd tomcat
 sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 cd /tmp
@@ -12,7 +12,7 @@ sudo chgrp -R tomcat /opt/tomcat
 sudo chmod -R g+r conf
 sudo chmod g+x conf
 sudo chown -R tomcat webapps/ work/ temp/ logs/
-sudo cp tomcat.service /etc/systemd/system/
+sudo cp /home/ubuntu/tomcat.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo /opt/tomcat/bin/startup.sh run
 sudo ufw allow 8080
