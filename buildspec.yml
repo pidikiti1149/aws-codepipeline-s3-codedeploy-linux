@@ -22,4 +22,4 @@ phases:
 artifacts:
   type: 
   files:
-    - target/messageUtil-1.0.war
+    - target/sparkjava-hello-world-1.0.war
