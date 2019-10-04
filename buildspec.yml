@@ -18,3 +18,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+
+artifacts:
+  type: 
+  files:
+    - target/messageUtil-1.0.war
