@@ -1,7 +1,7 @@
 version: 0.0
 os: linux	
 files:	
-  - source: index.html
+  - source: target/messageUtil-1.0.war
     destination: /tomcat/webapps	    
 hooks:	
   BeforeInstall:	 
