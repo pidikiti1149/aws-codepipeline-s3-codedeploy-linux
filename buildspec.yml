@@ -8,6 +8,7 @@ phases:
     commands:
       - apt-get install openjdk-8-jdk
       - apt-get install -y maven
+      - apt-get install unzip
 
   build:
     commands:
@@ -18,6 +19,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - zip sparkjava-hello-world-1.0.zip sparkjava-hello-world-1.0.war
 
 artifacts:
   type: 
