@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - zip helloworld.zip ./sparkjava-hello-world-1.0.war
+      - zip helloworld.zip ./target/sparkjava-hello-world-1.0.war
 
 artifacts:
   type: 
