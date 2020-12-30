@@ -7,8 +7,6 @@ phases:
   
     commands:
       - apt-get install openjdk-8-jdk
-      - apt-get install maven
-      - apt-get install -y unzip
 
   build:
     commands:
